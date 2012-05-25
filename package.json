@@ -1,0 +1,31 @@
+{
+    "name": "respirator",
+    "version": "0.0.1",
+    "private": false,
+    "author": "ex.fm<info@ex.fm>",
+    "maintainers": [
+        "imlucas <lucas@ex.fm>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/exfm/respirator.git"
+    },
+    "keywords": [
+        "redis",
+        "pubsub",
+        "tools"
+    ],
+    "dependencies": {
+      "redis": "0.7.1",
+      "set": "1.0.0",
+      "winston": "0.5.11"
+    },
+    "devDependencies": {
+      "mocha": "1.0.0",
+      "chai": "0.5.2"
+    },
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    }
+}
