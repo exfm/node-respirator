@@ -30,6 +30,12 @@ Respirator.prototype.start = function(){
     this.interval = setInterval(this.poll.bind(this), this.pollInterval);
 };
 
+Respirator.prototype.stop = function(){
+    delete this.watchedKeys;
+    this.log.verbose("Stopping...");
+    clearInterval(this.interval);
+};
+
 Respirator.prototype.watchKey = function(key){
     if(!this.watchedKeys.contains(key)){
         this.log.verbose(util.format("Watching key: %s", key));
