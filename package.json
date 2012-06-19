@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "private": false,
     "author": "ex.fm<info@ex.fm>",
+    "description": "Watch keys in redis.  Send a pubsub message when they expire or go away.",
     "maintainers": [
         "imlucas <lucas@ex.fm>"
     ],
