@@ -1,6 +1,12 @@
 # respirator
 
-Watch keys in redis.  Send a pubsub message when they expire.
+Watch keys in redis.  Send a pubsub message when they expire or go away.
+
+## Why?
+
+Redis doesnt fire pub sub events when keys expire and probably never will.
+This little guy just polls for the keys you're interested in and fires off a
+`<key_name>_expired` message.  You can build really neat things with this.
 
 ## Usage
 
