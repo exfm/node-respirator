@@ -4,7 +4,9 @@ Watch keys in redis.  Send a pubsub message when they expire or go away.
 
 ## Why?
 
-Redis doesnt fire pub sub events when keys expire and probably never will.
+Redis doesn't currently fire pub sub events when keys are deleted or expired.  
+Hopefully it will in [Redis 2.8](https://github.com/antirez/redis/issues/594) but until then respirator can help.
+
 This little guy just polls for the keys you're interested in and fires off a
 `<key_name>_expired` message.  You can build really neat things with this.
 
