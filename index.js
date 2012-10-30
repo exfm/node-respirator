@@ -105,7 +105,5 @@ function createServer(opts){
     return r;
 }
 
-module.exports = {
-    'Respirator': Respirator,
-    'createServer': createServer
-};
+module.exports = createServer;
+module.exports.Respirator = Respirator;

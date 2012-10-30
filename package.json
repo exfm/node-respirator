@@ -1,6 +1,6 @@
 {
     "name": "respirator",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": false,
     "author": "ex.fm<info@ex.fm>",
     "description": "Watch keys in redis.  Send a pubsub message when they expire or go away.",
@@ -9,7 +9,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/exfm/respirator.git"
+        "url": "https://github.com/exfm/node-respirator.git"
     },
     "keywords": [
         "redis",
