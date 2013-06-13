@@ -13,7 +13,7 @@ This little guy just polls for the keys you're interested in and fires off a
 ## Usage
 
     // Setup respirator
-    var respirator = require('respirator').createServer();
+    var respirator = require('respirator')();
 
     // Shorcut for getting a redis pubsub connection
     var pubsub = respirator.getRedis();
